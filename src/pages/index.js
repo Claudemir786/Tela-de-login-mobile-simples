@@ -1,12 +1,16 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import Cabecalho from '../components/Header';
+import Corpo from '../components/Body';
+import Rodape from '../components/Footer';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Olá mundo hoje é segunda-feira</Text>
-      <StatusBar style="auto" />
+     <Cabecalho name='Login'/>
+     <Corpo/>
+     <Rodape/>
     </View>
   );
 }
@@ -14,8 +18,11 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#3A085D',
     alignItems: 'center',
     justifyContent: 'center',
   },
 });
+
+
+
